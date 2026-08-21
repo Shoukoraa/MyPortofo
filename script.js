@@ -67,4 +67,19 @@ document.addEventListener('DOMContentLoaded', () => {
         section.style.transition = 'all 0.6s ease-out';
         sectionObserver.observe(section);
     });
+
+    // Image Slider functionality
+    const sliders = document.querySelectorAll('.image-slider');
+    sliders.forEach(slider => {
+        const slides = slider.querySelectorAll('.slide');
+        let currentSlide = 0;
+        
+        if (slides.length > 1) {
+            setInterval(() => {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }, 5000); // 5000ms = 5 seconds
+        }
+    });
 });
