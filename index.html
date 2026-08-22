@@ -13,10 +13,11 @@
     <nav class="navbar">
         <div class="logo"></div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang saya</a></li>
+            <li><a href="#projects">Portofolio</a></li>
+            <li><a href="#education">Pendidikan</a></li>
+            <li><a href="#contact">Kontak</a></li>
         </ul>
         <div class="hamburger">
             <span class="bar"></span>
@@ -29,7 +30,7 @@
         <div class="hero-content">
             <h2 class="greeting">Halo, saya</h2>
             <h2 class="name">Jonatan Saputra Simbolon</h2>
-            <h2 class="title">Mahasiswa S1 Informatika & Web Developer.</h2>
+            <h2 class="title">Mahasiswa S1 Informatika</h2>
             <p class="summary">
                 Mahasiswa semester 5 Universitas Buana Perjuangan Karawang yang memiliki ketertarikan pada bidang Web dan Software Development. Saya berpengalaman menggunakan Laravel dan Ionic/Angular.
             </p>
@@ -63,8 +64,13 @@
         </div>
     </section>
 
+
     <section id="projects" class="projects">
-        <h2 class="section-title">Some Things I've Built</h2>
+        <div style="text-align: center; margin-bottom: 40px;">
+            <p style="font-weight: 600; margin-bottom: 5px;">Portofolio</p>
+            <h2 class="section-title centered-title" style="margin-bottom: 10px;">Project</h2>
+            <p>Berikut beberapa projek yang pernah dikembangkan</p>
+        </div>
         <div class="project-grid">
             <!-- Project 1 -->
             <div class="project-card">
@@ -110,6 +116,26 @@
         </div>
     </section>
 
+    <section id="education" class="education">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <p style="font-weight: 600; color: var(--text-secondary); margin-bottom: 5px;">Pendidikan</p>
+            <h2 class="section-title centered-title" style="margin-bottom: 10px;">Riwayat Pendidikan</h2>
+            <p>Pernah dan sedang belajar pada program dan instansi berikut</p>
+        </div>
+        <div class="edu-logos">
+            <!-- UBP Karawang -->
+            <a href="https://ubpkarawang.ac.id/" target="_blank" class="edu-logo" style="text-decoration: none;">
+                <img src="https://res.cloudinary.com/kkgrpcsm/image/upload/v1787387529/UBP_KARAWANG.jpg" alt="UBP Karawang">
+                <!-- <p>UBP Karawang</p> -->
+            </a>
+            <!-- SMK Teknologi Karawang -->
+            <a href="https://smkteknologi-karawang.sch.id/" target="_blank" class="edu-logo" style="text-decoration: none;">
+                <img src="https://res.cloudinary.com/kkgrpcsm/image/upload/v1787387530/SMK_TEKNOLOGI.png" alt="SMK Teknologi Karawang">
+                <!-- <p>SMK Teknologi Karawang</p> -->
+            </a>
+        </div>
+    </section>
+
     <section id="contact" class="contact">
         <p class="contact-subtitle">Kontak</p>
         <h2 class="contact-title">Hubungi Saya</h2>
@@ -124,11 +150,38 @@
         </div>
     </section>
 
-    <footer>
-        <p>Designed & Built by Jonatan Saputra Simbolon</p>
-        <div class="social-links">
-            <!-- <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3 class="footer-name">Jonatan Saputra Simbolon</h3>
+                <h4 class="footer-heading">Hubungi Saya</h4>
+                <p>josptrr@gmail.com</p>
+                <p>Karawang, Jawa Barat</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Tautan</h4>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang Saya</a></li>
+                    <li><a href="#projects">Portofolio</a></li>
+                    <li><a href="#education">Pendidikan</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+            <div class="footer-socials">
+                <a href="https://wa.me/6285157975992" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:josptrr@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/jonatan-saputra-simbolon-909456334" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Shoukoraa" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/km.shkraaa/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@PARNAMUSICPRODUCTION" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="footer-copyright">
+                Dibuat oleh <span class="highlight">Jonatan Saputra Simbolon</span>, menggunakan <span class="highlight">HTML & CSS</span>
+            </p>
         </div>
     </footer>
 
